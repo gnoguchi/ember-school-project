@@ -5,6 +5,8 @@
 
 
 <h4>Let's eat!</h4>
+<p> {{model.length}} foods total</p>
+<p> {{availableItems.length}} foods available!</p>
 
 <ul>
 
@@ -20,6 +22,7 @@
       <li class="not-available">
         {{food.name}}
         <button {{action 'makeAvailable' food}}>Make available</button>
+        <button {{action 'destroyItem' food}}>Destroy</button>
       </li>
    {{/if}}
   {{/each}}
@@ -27,5 +30,5 @@
 
 
 </ul>
-{{log model}}
-{{input value=restaurant.name}}
+{{input value=newItem}}
+<button {{action 'saveNewItem'}}>Save</button>
