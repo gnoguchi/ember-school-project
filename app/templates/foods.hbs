@@ -14,7 +14,7 @@
 
    {{#if food.isAvailable}}
       <li>
-        {{food.name}}!
+        {{#link-to 'food' food.id}}{{food.name}}{{/link-to}}!
         <button {{action 'makeUnavailable' food}}>Make Unavailable</button>
       </li>
 
