@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('foods');
   this.route('about');
   this.route('contact');
+  this.route('favorite-word', {path: 'favorite-word/:word'});
 });
 
 export default Router;
