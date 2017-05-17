@@ -1,3 +1,5 @@
+<div class="flex-container">
+   <div class="flex-item">
 <h1>Menu Tracker</h1>
 <p id="explanation">Menu tracker helps you see what  dishes are available today.</p>
 
@@ -14,7 +16,7 @@
 
    {{#if food.isAvailable}}
       <li>
-        {{#link-to 'food' food.id}}{{food.name}}{{/link-to}}!
+        {{#link-to 'foods.food' food.id}}{{food.name}}{{/link-to}}!
         <button {{action 'makeUnavailable' food}}>Make Unavailable</button>
       </li>
 
@@ -30,7 +32,11 @@
 
 
 </ul>
-{{input value=newItem}}
+<p>Nome da fruta {{input value=newItem}}</p>
+<p>descrição da fruta {{input value =description}}</p>
 <button {{action 'saveNewItem'}}>Save</button>
-
-<br/>
+  </div>
+  <div class="flex-item">
+  {{outlet}}
+  </div>
+</div>

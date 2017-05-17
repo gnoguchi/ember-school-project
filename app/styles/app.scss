@@ -3,3 +3,12 @@
 .options-margins {
   margin-top: 20px;
 }
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item{
+  padding: 20px;
+}

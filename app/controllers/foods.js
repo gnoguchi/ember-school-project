@@ -16,7 +16,8 @@ export default Ember.Controller.extend({
       saveNewItem(){
         this.store.createRecord('food', {
            isAvailable:false,
-           name: this.get('newItem')
+           name: this.get('newItem'),
+           description: this.get('description')
         }).save()
         this.set('newItem', '')
       },
