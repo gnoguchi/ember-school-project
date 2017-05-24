@@ -6,3 +6,7 @@ li.not-available{
 li.available{
     text-decoration: underline;
 }
+
+li.not-available a {
+  color:grey;
+}
